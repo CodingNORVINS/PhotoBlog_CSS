@@ -9,7 +9,7 @@
 }
 
 body {
-	line-height: 1;
+	line-height: 16.09px;
 	font-family: var(--main-font);
 	font-size: 14px;
 	font-weight: 400;
@@ -61,12 +61,7 @@ ul {
 
 .header-link {
 	color: var(--paragraph-color);
-	line-height: 18.66px;
 	font-weight: inherit;
-}
-
-.hero {
-	padding: 0 147px 66px;
 }
 
 .hero-list {
@@ -80,7 +75,7 @@ ul {
 }
 
 .hero-item {
-	flex-basis: calc((100% - 65px) / 3);
+	flex-basis: calc((100% - 65px) / 2);
 }
 
 .hero-image,
@@ -92,14 +87,12 @@ ul {
 	margin-bottom: 40px;
 	font-size: 30px;
 	color: var(--article-text-color);
-	line-height: 16.09px;
 	font-weight: 400;
 }
 
 .hero-subtitle {
 	color: var(--subtitle-color);
 	font-family: var(--secondary-font);
-	line-height: 100%;
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -109,7 +102,6 @@ ul {
 	font-family: var(--main-font);
 	color: var(--article-text-color);
 	font-weight: 400;
-	line-height: 18.66px;
 	font-size: 14px;
 }
 
@@ -117,9 +109,8 @@ ul {
 	background-color: var(--background-color);
 	color: var(--article-text-color);
 	border: 1px solid var(--article-text-color);
-	font-weight: 400;
 	display: block;
 	margin: 0 auto;
 	padding: 20px 48px 21px 49px;
-	line-height: 18.66px;
+	margin-bottom: 64px;
 }
