@@ -9,10 +9,9 @@
 }
 
 body {
-	line-height: 16.09px;
+	line-height: 100%;
 	font-family: var(--main-font);
 	font-size: 14px;
-	font-weight: 400;
 	background-color: var(--background-color);
 	margin: 0;
 }
@@ -35,33 +34,27 @@ a:hover {
 	margin: 0 auto;
 }
 
-body,
-h2,
-h3,
-p,
-ul {
-	margin: 0;
-	padding: 0;
-}
-
 .header {
-	padding: 71px 183px 92px 168px;
+	padding-top: 4.5rem;
+	padding-bottom: 5.5rem;
 }
 
 .header-list {
 	display: flex;
-	align-items: center;
 	gap: 99px;
-	margin: 0 auto;
-	list-style: none;
+	list-style-type: none;
 	text-transform: uppercase;
-	color: var(--paragraph-color);
 	justify-content: center;
 }
 
 .header-link {
 	color: var(--paragraph-color);
-	font-weight: inherit;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.header-link:hover {
+	color: var(--link-color);
 }
 
 .hero-list {
@@ -87,7 +80,6 @@ ul {
 	margin-bottom: 40px;
 	font-size: 30px;
 	color: var(--article-text-color);
-	font-weight: 400;
 }
 
 .hero-subtitle {
@@ -95,14 +87,11 @@ ul {
 	font-family: var(--secondary-font);
 	font-weight: 300;
 	text-transform: uppercase;
-	font-size: 14px;
 }
 
 .hero-description {
 	font-family: var(--main-font);
 	color: var(--article-text-color);
-	font-weight: 400;
-	font-size: 14px;
 }
 
 .hero-button {
