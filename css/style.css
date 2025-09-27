@@ -1,105 +1,89 @@
 :root {
-	--paragraph-color: rgba(125, 125, 125, 1);
-	--link-color: rgba(3, 169, 244, 1);
-	--subtitle-color: rgba(180, 173, 158, 1);
 	--article-text-color: rgba(98, 98, 98, 1);
+	--paragraph-color: rgba(125, 125, 125, 1);
+	--subtitle-color: rgba(180, 173, 158, 1);
+	--link-color: rgba(3, 169, 244, 1);
 	--background-color: rgba(255, 255, 255, 1);
 	--main-font: 'Playfair Display', sans-serif;
 	--secondary-font: 'Ubuntu', sans-serif;
 }
 
 body {
-	line-height: 100%;
 	font-family: var(--main-font);
 	font-size: 14px;
 	background-color: var(--background-color);
-	margin: 0;
-}
-
-button {
-	cursor: pointer;
-	font-family: inherit;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	color: var(--link-color);
+	line-height: 18.66px;
 }
 
 .container {
-	width: 908px;
+	width: 906px;
 	margin: 0 auto;
 }
 
 .header {
-	padding-top: 4.5rem;
-	padding-bottom: 5.5rem;
+	padding-top: 71px;
+	padding-bottom: 92px;
 }
 
 .header-list {
 	display: flex;
-	gap: 99px;
-	list-style-type: none;
-	text-transform: uppercase;
+	gap: 100px;
 	justify-content: center;
 }
 
 .header-link {
+	text-transform: uppercase;
 	color: var(--paragraph-color);
-	font-size: 0.875rem;
-	text-decoration: none;
 }
 
 .header-link:hover {
 	color: var(--link-color);
 }
 
+.hero {
+	padding-bottom: 66px;
+}
+
 .hero-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 65px;
 	row-gap: 130px;
-	margin-bottom: 94px;
-	list-style: none;
+	-moz-column-gap: 65px;
+	column-gap: 65px;
+	padding-bottom: 90px;
 }
 
 .hero-item {
-	flex-basis: calc((100% - 65px) / 2);
+	max-width: 420px;
 }
 
-.hero-image,
 .hero-subtitle {
-	margin-bottom: 32px;
+	font-weight: 300;
+	color: var(--article-text-color);
+	font-size: inherit;
+	text-transform: uppercase;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-family: var(--secondary-font);
+	color: var(--subtitle-color);
 }
 
 .hero-title {
-	margin-bottom: 40px;
 	font-size: 30px;
 	color: var(--article-text-color);
-}
-
-.hero-subtitle {
-	color: var(--subtitle-color);
-	font-family: var(--secondary-font);
-	font-weight: 300;
-	text-transform: uppercase;
+	padding-bottom: 40px;
 }
 
 .hero-description {
-	font-family: var(--main-font);
 	color: var(--article-text-color);
 }
 
 .hero-button {
-	background-color: var(--background-color);
 	color: var(--article-text-color);
+	padding: 20px 48px;
+	background-color: var(--background);
 	border: 1px solid var(--article-text-color);
 	display: block;
-	margin: 0 auto;
-	padding: 20px 48px 21px 49px;
-	margin-bottom: 64px;
+	margin: auto;
+	font-family: var(--main-font);
 }
