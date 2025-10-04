@@ -11,8 +11,7 @@
 body {
 	font-family: var(--main-font);
 	font-size: 14px;
-	background-color: var(--background-color);
-	line-height: 18.66px;
+	line-height: 19px;
 }
 
 .container {
@@ -22,38 +21,33 @@ body {
 
 .header {
 	padding-top: 71px;
-	padding-bottom: 94px;
 }
 .header-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	gap: 99px;
 	list-style-type: none;
 	text-transform: uppercase;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	/* justify-content: center; */
+	padding-right: 183px;
+	padding-left: 169px;
 }
 .header-link {
-	color: rgb(125, 125, 125);
+	color: var(--paragraph-color);
 	font-weight: inherit;
-	font-weight: 400;
-	font-size: 14px;
 }
 .header-link:hover {
-	color: rgb(3, 169, 244);
+	color: var(--link-color);
 }
 
 .hero {
-	padding-bottom: 66px;
+	margin-top: 94px;
+	margin-bottom: 64px;
 }
 
 .hero-list {
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 130px;
-	-moz-column-gap: 65px;
 	column-gap: 65px;
 	padding-bottom: 90px;
 }
@@ -62,8 +56,8 @@ body {
 }
 
 .hero-item {
-	max-width: 420px;
-	max-height: 542px;
+	width: 420px;
+	height: 542px;
 }
 
 .hero-subtitle {
@@ -71,7 +65,6 @@ body {
 	color: var(--article-text-color);
 	font-size: inherit;
 	text-transform: uppercase;
-	padding-left: 6px;
 	padding-bottom: 28px;
 	font-family: var(--secondary-font);
 	color: var(--subtitle-color);
@@ -86,7 +79,6 @@ body {
 
 .hero-description {
 	color: var(--article-text-color);
-	padding-left: 6px;
 	padding-top: 44px;
 }
 
